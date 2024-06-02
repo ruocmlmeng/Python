@@ -17,3 +17,5 @@ train_smoke = x_train[x_train[:, 9] == 1]  # 找出符合要求的数据，将�
 total_smokers = np.sum(train_smoke[:, 9] == 1)
 print("抽烟的患者有多少人：",total_smokers)
 np.savetxt("result1.csv", x_test, delimiter=",", fmt="%.2f")  # 将数组保存为文件，将本行代码补充完整
+
+
